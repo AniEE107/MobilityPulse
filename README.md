@@ -1,22 +1,101 @@
-# MobilityPulse
-Engineered a data pipeline to ingest and analyze 1M+ ride records and 100K+ cancellations.
-Implemented insights that improved booking experience and contributed to 20%+ revenue uplift. 
+# 🚗 MobilityPulse – Ride & Cancellation Analytics Dashboard
 
-# Key Features & Functionality:
-Scalable Data Ingestion & Processing: Engineered a pipeline capable of ingesting and analyzing over 1 million ride records and 100,000+ cancellation events, demonstrating robust handling of large datasets.
-Operational Insight Generation: Unlocks critical insights into service performance, identifying patterns in ride demand, peak hours, common routes, and operational bottlenecks.
-Cancellation Analysis: Provides deep dives into cancellation reasons and trends, helping to pinpoint areas for service improvement and driver retention strategies.
-Engagement Tracking: Monitors user engagement metrics, offering a clearer picture of service adoption and customer satisfaction.
-Reporting & Visualization Foundation: While the direct output is processed data, the project lays the groundwork for creating dashboards (as mentioned in your resume) to visualize ride patterns, cancellations, and engagement.
+**MobilityPulse** is an interactive **Power BI dashboard** that provides deep insights into ride-sharing operations, cancellations, revenue, and user behavior. The goal is to help mobility companies monitor performance, identify operational bottlenecks, and improve the rider experience.
 
-# Technologies Used:
-Python: The primary language for building the data processing pipeline.
-Pandas: Extensively used for data manipulation, cleaning, and transformation.
-Jupyter Notebook: Likely used for development, testing, and demonstrating pipeline steps and initial analysis.
+---
 
-# Impact & Results
-This project directly contributed to significant improvements in the mobility service:
-Enhanced Operational Understanding: Provided comprehensive insights that were previously unavailable, enabling more informed strategic decisions.
-Reduced Reporting Time: The structured data output and dashboard foundation helped reduce manual reporting time by 20%.
-Optimized Workflows: Insights derived from the data analysis led to the optimization of booking workflows and user experience through targeted strategies.
-Significant Revenue Increase: Ultimately, the improvements driven by these insights resulted in a 20% increase in overall revenue.
+## 📊 Key Features
+
+- ✅ **Total Rides, Revenue, and Active Users**
+- 📉 **Cancellation Rate by Reason** (e.g., driver unavailability, customer no-show)
+- 📅 **Daily/Weekly Ride Trends** to spot usage patterns
+- 🗺️ **Zone/City-Level Heatmaps** of ride demand
+- ⏱️ **Idle Time & Utilization KPIs** for fleet optimization
+- 💸 **Customer Spend & Ride Frequency Analysis**
+
+---
+
+## 🛠️ Tools & Tech
+
+| Tool/Tech      | Purpose                            |
+|----------------|------------------------------------|
+| **Power BI**   | Visualization & dashboarding       |
+| **Power Query**| Data cleaning & transformation     |
+| **DAX**        | Calculated measures and KPIs       |
+| **Excel/CSV**  | Data source (ride logs, user info) |
+
+---
+
+## 📁 Dataset Structure
+
+The dashboard is built on cleaned, preprocessed data including:
+
+- `rides.csv`: ride_id, customer_id, vehicle_id, start_time, end_time, fare
+- `cancellations.csv`: reason, timestamp, driver_id, ride_id
+- `zones.csv`: location_name, lat/lon, region
+- `users.csv`: registration date, rating, total rides
+
+---
+
+## 📷 Dashboard Preview
+
+Here are snapshots of the dashboard in action:
+
+### 1. Ride Trends Overview
+![Ride Trends](https://raw.githubusercontent.com/AniEE107/MobilityPulse/main/ola_1.png)
+
+### 2. Cancellations Breakdown
+![Cancellations](https://raw.githubusercontent.com/AniEE107/MobilityPulse/main/ola_2.png)
+
+### 3. Regional Demand & Fleet Utilization
+![Utilization](https://raw.githubusercontent.com/AniEE107/MobilityPulse/main/ola_3.png)
+
+### 4. Revenue and Profitability Insights
+![Revenue](https://raw.githubusercontent.com/AniEE107/MobilityPulse/main/ola_4.png)
+
+### 5. Rider Behavior & Loyalty Metrics
+![User Analysis](https://raw.githubusercontent.com/AniEE107/MobilityPulse/main/ola_5.png)
+
+> 📌 The dashboard allows interactive filtering by city, time, and ride status.
+
+---
+
+## 🔍 Use Case Scenarios
+
+- 🚩 Spot high-cancellation zones to adjust fleet allocation
+- 🕒 Identify peak ride hours for dynamic pricing
+- 🔁 Track repeat riders and loyalty indicators
+- 📉 Detect zones with high idle time or low driver utilization
+
+---
+
+## 🧠 Key Insights
+
+- 40% of cancellations came from just 3 zones during peak hours  
+- Average fleet utilization dropped below 60% during weekends  
+- Top 10% users contributed over 50% of revenue
+
+---
+
+## 🚀 Possible Enhancements
+
+- Real-time refresh from live APIs
+- Forecasting ride demand using time series models
+- Drillthrough reports for individual driver/rider performance
+- Integration with IoT/telematics data for fleet monitoring
+
+---
+
+## 👨‍💻 Author
+
+**Manish Kumar**  
+🔗 [LinkedIn](https://www.linkedin.com/in/your-profile)  
+📁 [Portfolio](https://github.com/AniEE107)
+
+---
+
+## 📌 Disclaimer
+
+> This dashboard was created for demonstration purposes using sample or anonymized data.
+
+---
